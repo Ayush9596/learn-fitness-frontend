@@ -1,0 +1,59 @@
+// For the expo app
+{
+  "expo": {
+    "name": "LearnFitness",
+    "slug": "learnfitness",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "usesAppleSignIn": true,
+      "buildNumber": "1.0.0",
+      "supportsTablet": true,
+      "bundleIdentifier": "com.LearnFitness.LearnFitness",
+      "googleServicesFile": "./utils/GoogleService-Info.plist"
+    },
+    "android": {
+      "versionCode": 1,
+      "package": "com.LearnFitness.LearnFitness",
+      "googleServicesFile": "./utils/google-services.json",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "androidStatusBar": {
+      "translucent": true
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-apple-authentication",
+      "@react-native-google-signin/google-signin",
+      "@react-native-firebase/app",
+      "@react-native-firebase/auth",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "e8caa024-5e5d-4b7b-876c-8fd1261e6845"
+      }
+    },
+    "owner": "learnfitnessteam"
+  }
+}
